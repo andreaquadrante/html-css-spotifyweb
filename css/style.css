@@ -8,14 +8,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.full-screen {
-  width: 100vw;
-  height: 100vh;
-}
-
 #sidebar {
   height: 90vh;
   background-color: #242424;
+}
+
+#calltoaction {
+  height: 10vh;
+  background-color: #000;
 }
 
 #home {
