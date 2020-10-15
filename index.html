@@ -11,10 +11,13 @@
   <body>
     <main class="full-screen">
       <section id="sidebar">
-        <div id="sidebar-logo" class="sidebar-element">
+        <div id="sidebar-logo">
           <img src="img/logo.svg" alt="Spotify">
         </div>
-        <div id="sidebar-menu" class="sidebar-element">
+        <div id="sidebar-logo-xs">
+          <img src="img/logo-small.svg" alt="Spotify">
+        </div>
+        <div id="sidebar-menu">
           <nav>
             <ul class="list-unstyled">
               <li><img src="img/home.svg" alt="Home"> <a href="#" class="active">Home</a></li>
@@ -23,25 +26,34 @@
             </ul>
           </nav>
         </div>
-        <div id="sidebar-playlists" class="sidebar-element">
-          <h4>PLAYLIST</h4>
-          <div class="add-playlist container-flex">
-            <div class="add-button">+</div>
-            <a href="#">Crea Playlist</a>
-          </div>
+        <div id="sidebar-menu-xs">
           <nav>
             <ul class="list-unstyled">
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
-              <li>Nome Playlist</li>
+              <li><img src="img/home.svg" alt="Home"></li>
+              <li><img src="img/search.svg" alt="Cerca"></li>
+              <li><img src="img/libreria.svg" alt="Libreria"></li>
             </ul>
           </nav>
         </div>
-        <div id="sidebar-user" class="sidebar-element">
+        <div id="sidebar-playlists">
+          <h4>PLAYLIST</h4>
+          <a href="#"><div class="add-playlist">
+            <div class="add-button">+</div>
+            <span>Crea Playlist</span>
+          </div><a/>
+          <nav>
+            <ul class="list-unstyled">
+              <li><a href="#">Nome Playlist<a/></li>
+              <li><a href="#">Nome Playlist<a/></li>
+              <li><a href="#">Nome Playlist<a/></li>
+              <li><a href="#">Nome Playlist<a/></li>
+              <li><a href="#">Nome Playlist<a/></li>
+              <li><a href="#">Nome Playlist<a/></li>
+              <li><a href="#">Nome Playlist<a/></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="sidebar-user">
           <div class="sidebar-user-container">
             <div class="download-app">
               <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
@@ -54,6 +66,12 @@
               </div>
               <h5>Andrea Quadrante</h5>
             </div>
+          </div>
+        </div>
+        <div id="sidebar-user-xs">
+          <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+          <div class="user-icon">
+            <img src="img/profile.svg" alt="">
           </div>
         </div>
       </section>

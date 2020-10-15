@@ -33,23 +33,29 @@ a {
 
 #sidebar {
   width: 200px;
-  height: calc(100vh - 100px);
-  float: left;
+  height: calc(100% - 100px);
   background-color: #000;
+  float: left;
+  padding: 30px 15px;
+  overflow-y: hidden;
+}
+
+#sidebar-logo {
+  height: 10%;
+  /* overflow-y: hidden; */
 }
 
 #sidebar-logo img {
   width: 70%;
 }
 
-.sidebar-element {
-  margin-top: 30px;
-  margin-left: 15px;
-  overflow: hidden;
-}
-
 .list-unstyled {
   list-style-type: none;
+}
+
+#sidebar-menu {
+  height: 20%;
+  /* overflow-y: hidden; */
 }
 
 #sidebar-menu nav ul li {
@@ -74,6 +80,11 @@ a {
   color: #fff;
 }
 
+#sidebar-playlists {
+  height: 50%;
+  /* overflow-y: hidden; */
+}
+
 #sidebar-playlists h4 {
   margin-bottom: 10px;
 }
@@ -95,15 +106,20 @@ a {
   font-size: 2rem;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
 }
 
-#sidebar-playlists .add-playlist a {
+#sidebar-playlists .add-playlist span {
   margin-left: 10px;
   font-size: 1rem;
+  vertical-align: middle;
 }
 
 #sidebar-user {
-  margin-top: 90px;
+  height: 20%;
+  display: flex;
+  align-items: flex-end;
+  /* overflow-y: hidden; */
 }
 
 #sidebar-user .download-app {
@@ -116,7 +132,7 @@ a {
 
 #sidebar-user .divisor {
   height: 1px;
-  width: 80%;
+  width: 100%;
   background-color: #fff;
   margin-bottom: 10px;
 }
@@ -161,13 +177,66 @@ a {
 }
 
 #home {
-  width: 100vw;
-  height: calc(100vh - 100px);
+  width: 100%;
+  height: calc(100% - 100px);
   background-color: #141922;
 }
 
 #player {
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background-color: #282828;
+}
+
+@media screen and (min-width: 577px) {
+  #sidebar-logo-xs,
+  #sidebar-menu-xs,
+  #sidebar-playlists-xs,
+  #sidebar-user-xs {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #sidebar {
+    width: 50px;
+    padding: 15px 15px;
+    overflow-y: hidden;
+  }
+
+  #sidebar-logo,
+  #sidebar-menu,
+  #sidebar-playlists,
+  #sidebar-user {
+    display: none;
+  }
+
+  #sidebar-logo-xs {
+    height: 5%;
+  }
+
+  #sidebar-menu-xs {
+    height: 15%;
+  }
+
+  #sidebar-user-xs {
+    height: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #sidebar-user-xs .user-icon {
+    height: 20px;
+    width: 20px;
+    background-color: #717171;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+
+  #calltoaction {
+    width: calc(100% - 50px);
+  }
 }
